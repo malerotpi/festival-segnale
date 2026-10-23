@@ -155,7 +155,11 @@ h3 {
 .venues li {
   margin-bottom: 0.5rem;
 }
-
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
 /* Qui inseriremo la regola .event-grid durante la demo. */
 
 .event-card {
