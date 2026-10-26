@@ -164,6 +164,7 @@ h3 {
 
 .event-card {
   margin-bottom: 1.5rem;
+  min-width:0;
   overflow: hidden;
   border: 1px solid #b7c0b7;
   border-radius: 0.75rem;
@@ -172,6 +173,7 @@ h3 {
 
 .event-card img {
   display: block;
+  max-width:100%;
   width: 100%;
   height: auto;
 }
@@ -209,4 +211,15 @@ h3 {
   top: 1rem;
 }
 
+@media (min-width: 600px) {
+  .event-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .event-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 /* Qui aggiungeremo la media query durante la demo. */
